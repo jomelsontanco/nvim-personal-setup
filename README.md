@@ -1,7 +1,7 @@
 # nvim-personal-setup
 
 This is my personal Neovim setup.
-Serves as a backup of my configuration, and hopefully, in the far future, a record of my progress as a software engineer.
+Serves as a backup of my configuration for synching across computers.
 
 ## Windows
 
