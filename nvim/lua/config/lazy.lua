@@ -31,6 +31,9 @@ vim.keymap.set("o", "ar", "a[")
 vim.keymap.set("o", "ia", "i<")
 vim.keymap.set("o", "aa", "a<")
 
+-- For plugin vim-wordmotion
+vim.g.wordmotion_prefix = ','
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
