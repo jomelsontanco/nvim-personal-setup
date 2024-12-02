@@ -18,8 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 -- Make sure to setup `mapleader` and `maplocalleader` before
 -- loading lazy.nvim so that mappings are correct.
 -- This is also a good place to setup other settings (vim.opt)
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+-- vim.g.mapleader = " "
+-- vim.g.maplocalleader = "\\"
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
@@ -32,7 +32,13 @@ vim.keymap.set("o", "ia", "i<")
 vim.keymap.set("o", "aa", "a<")
 
 -- For plugin vim-wordmotion
-vim.g.wordmotion_prefix = ','
+-- vim.g.wordmotion_prefix = ','
+vim.keymap.set("", "<leader>w", "w")
+vim.keymap.set("", "<leader>b", "b")
+vim.keymap.set("", "<leader>e", "e")
+vim.keymap.set("", "<leader>ge", "ge")
+vim.keymap.set("", "i<leader>w", "iw")
+vim.keymap.set("", "a<leader>w", "aw")
 
 -- Setup lazy.nvim
 require("lazy").setup({
