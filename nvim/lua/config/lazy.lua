@@ -26,19 +26,19 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Additional operator-mode maps for [] and <> as suggested in nvim-surround for consistency
-vim.keymap.set("o", "ir", "i[")
-vim.keymap.set("o", "ar", "a[")
-vim.keymap.set("o", "ia", "i<")
-vim.keymap.set("o", "aa", "a<")
+vim.keymap.set("", "ir", "i[")
+vim.keymap.set("", "ar", "a[")
+vim.keymap.set("", "ia", "i<")
+vim.keymap.set("", "aa", "a<")
 
 -- For plugin vim-wordmotion
--- vim.g.wordmotion_prefix = ','
-vim.keymap.set("", "<leader>w", "w")
-vim.keymap.set("", "<leader>b", "b")
-vim.keymap.set("", "<leader>e", "e")
-vim.keymap.set("", "<leader>ge", "ge")
-vim.keymap.set("", "i<leader>w", "iw")
-vim.keymap.set("", "a<leader>w", "aw")
+vim.g.wordmotion_prefix = "<leader>"
+--vim.keymap.set("", "<leader>w", "w")
+--vim.keymap.set("", "<leader>b", "b")
+--vim.keymap.set("", "<leader>e", "e")
+--vim.keymap.set("", "<leader>ge", "ge")
+--vim.keymap.set("", "i<leader>w", "iw")
+--vim.keymap.set("", "a<leader>w", "aw")
 
 -- Setup lazy.nvim
 require("lazy").setup({
